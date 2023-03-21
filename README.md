@@ -15,12 +15,5 @@ HIGHLY ENCOURAGE YOU TO  MAP IT TO A JSON STRING.
 
 #REFERENCE
 
-ObjectMapper mapper = new ObjectMapper();
-String jsonInString = "{'name' : 'xyz'}";
 
-//JSON from file to Object
-User user = mapper.readValue(new File("c:\\user.json"), User.class);
-
-//JSON from String to Object
-User user = mapper.readValue(jsonInString, User.class);
 
